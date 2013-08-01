@@ -1,0 +1,227 @@
+===================================
+Since Wed Jul 10 15:37:31 UTC 2013
+===================================
+
+   * kernel/samsung/d2
+7dcfdd1 Re-add d2cri config
+
+   * libcore
+b7bdda9 Values in ZIP files are unsigned.
+8de3ae6 Only enforce the encrypted bit in the GPBF, and ignore other unsupported bits.
+26c451a Don't install APK files with unsupported General Purpose Bit Flag bits.
+01d302f Clean up ZipFile a little, fix a few bugs, and improve the documentation.
+4a85b80 Add detail messages to all the easy IllegalArgumentException cases.
+
+   * vendor/cm
+3b741ab Bump to 10.1.2
+
+   * vendor/sony
+a59475b blue: fusion3: remove nfc firmware
+
+===================================
+Since Fri Jun  7 23:41:29 UTC 2013
+===================================
+
+   * build
+67b4b4d roomservice: When validating the presence of a repo, check main manifest too
+
+   * external/freetype
+38810b9 Revert "Upgrade FreeType to 2.4.10"
+
+   * frameworks/av
+13c5530 Revert "libstagefright: Fix incorrectness nPortIndex value for QueryCodec"
+
+   * frameworks/base
+09520a4 Lockscreen : Fix widgets disabled
+3fc252a Keep on notification LED while dreaming.
+47946f6 SystemUI: Don't try to update the navbar if it doesn't exist
+01ba3a4 AssetRedirectionManager: Accept redirections only for whitelisted resource types
+4c4fbb9 SystemUI: zh-rTW translations
+fae5802 core: zh-rTW translations
+fbd0e5e Merge "Enable Estonian language" into cm-10.1-staging
+413aebb Merge "Pie controls: Fix multi-user handling (1/2)" into cm-10.1-staging
+2b46751 Enable Estonian language
+fe95943 Fix DateUtils.formatElapsedTime, again
+735f184 WebSettings: Move CM tag to the end of the user-agent
+13dcc7b QS: Don't assume observers are registered when dealing with changes
+ea2dc56 Pie controls: Fix multi-user handling (1/2)
+07b7236 Revert behavior of DateUtils.formatElapsedTime
+fd48397 ThemeUtils: Retain the original package name in themed UI context
+1fd1050 Derp fix.
+bdc2644 Merge "Hide navigation ring if no targets are configured." into cm-10.1-staging
+ab2e42d Check and fail early if requested wallpaper size exceeds maximum texture size.
+8995850 Hide navigation ring if no targets are configured.
+cf9d958 Merge "SystemUI: NL translation" into cm-10.1-staging
+836473b AssetRedirectionService: Check for permissions before running dump()
+bd02ac3 Merge "Fix dock battery tile display." into cm-10.1-staging
+24c0204 Fix mobile data button in power widget.
+0f7452b Fix dock battery tile display.
+f393bcd Don't assume any ringtone is present on external storage.
+13a51ee QuickSettings : Battery initial status
+fdcef68 Merge "Fix theme provider crashing for non-primary user." into cm-10.1-staging
+443727a Merge "Fix a number of multi-user bugs." into cm-10.1-staging
+ef9f8b9 Fix NPE in NavigationBarView during bugreport
+27ecaf1 SystemUI: NL translation
+0efb3dd Fix theme provider crashing for non-primary user.
+b188ab3 Fix a number of multi-user bugs.
+6a4355a frameworks_base: ES translations
+65a98bf Finally fix incorrect flipping to quick settings.
+
+   * frameworks/native
+05c8ddc provide overrides for hwui memory limits for xxhdpi phones
+
+   * frameworks/opt/telephony
+a20d358 SamsungExynos4RIL: cleanup for use with opensource libril
+
+   * kernel/samsung/d2
+93c485d msm: msm_fb: remove mmio access through mmap
+2c85407 devices-8960: Fix camera failure with newer tz firmware
+af2d329 m2: Raise MDP bandwidth values
+
+   * libcore
+ca18402 Remove support for duplicate file entries
+
+   * packages/apps/Browser
+d707496 Browser: zh-rTW translations
+
+   * packages/apps/CMFileManager
+b2af340 CMFM: NL translation
+
+   * packages/apps/CMUpdater
+3839bdf Fix NPE in case previous attempt to download changelog was unsuccessful.
+655f20b CMUpdater: RU translation update
+
+   * packages/apps/Calendar
+3cb4d4f Calendar: zh-rTW translations
+
+   * packages/apps/Contacts
+7adbda4 Contacts: zh-rTW translations
+
+   * packages/apps/DSPManager
+5a9ca6c dsp: Implement missing equalizer commands
+599a6d2 DSPManager: NL translation
+
+   * packages/apps/DeskClock
+a690abe DeskClock: zh-rTW translations
+
+   * packages/apps/Email
+c828183 Email: zh-rTW translations
+
+   * packages/apps/Mms
+8c61a9a Mms: CS translation
+8534062 Merge "Mms: Simplified Chinese Translations" into cm-10.1-staging
+a47c8f6 Fix 'vibrate on call' option.
+
+   * packages/apps/Phone
+8f6a4bc Phone: correct summary of national roaming [translation]
+
+   * packages/apps/Settings
+781e5a8 Merge "Pie controls: Fix multi-user handling (2/2)" into cm-10.1-staging
+d27944b Settings: Add translatables
+341750e Pie controls: Fix multi-user handling (2/2)
+131f668 Merge "Settings: Simplified Chinese Translations" into cm-10.1-staging
+d3c5464 Merge "Settigns: Update Polish translation" into cm-10.1-staging
+bbe76b3 Merge "Settings: ES translations" into cm-10.1-staging
+1823478 Settings: NL translation
+50d7e93 Settings: ES translations
+
+   * packages/apps/Torch
+92e34b5 Torch: Simplified Chinese Translation
+
+   * packages/apps/Trebuchet
+8ad7f15 Trebuchet: Fix stack effect
+421c4c6 Trebuchet: Fix Landscape/TransposeLayoutWithOrientation move to default page
+06e5c49 Trebuchet: Sync "maxExternal" preferences and its defaults values
+dbedcf5 Trebuchet: Revert animation end
+a23d981 Trebuchet: Fix fadein adjacent screens for stack transition
+619c93f Workspace: Change state animation cleanup
+57cba2e LauncherViewPropertyAnimator: Implement end()
+47947f9 Workspace: Landscape paged view indicators
+
+   * vendor/cm
+41df25a Bump to 10.1.1
+c6a2a7d Bump version for release
+9472479 init.cm: Fix sysinit dependencies
+
+   * vendor/cm-priv
+4fdfb49 Get back to regular test-keys whole-file signing
+85d46fe Add private key stuffs
+
+   * vendor/htc
+d5b5c00 m7: update RT5501 config
+6d855f0 evita: move QMI libraries to device-specific folders
+df89bce ville: move QMI libraries to device-specific folders
+7c77221 fireball: move QMI libraries to device-specific folders
+7378962 jewel: move QMI libraries to device-specific folders
+d1db4fe s4-common: move QMI libraries to device-specific folders
+bc61589 fireball: use proprietary files from s4-common
+7e62977 jewel: use proprietary files from s4-common, update files for 3.4
+0578094 evita: use proprietary files from s4-common
+0ad2ef4 ville: use proprietary files from s4-common
+700dd64 s4-common: create new common vendor repo for HTC 8960 devices
+370a7af evita: update C2D2 libraries
+e6e3a81 evita: update modem to correct 3.17 firmware
+8906b04 evita: re-add missing camera props
+8242138 evita: rename camera library for camera wrapper
+0bab758 evita: update C2D2 libraries Qualcomm version: AU_LINUX_ANDROID_JB_MR1.04.02.02.49.185
+541dbf3 evita: update Adreno firmware Qualcomm version: AU_LINUX_ANDROID_JB_VANILLA_04.02.02.060.053
+9dc3bf9 evita: update proprietary files Squashed commit of the following:
+e8e4403 ville: update C2D2 libraries
+9429ce9 ville: rename camera library for camera wrapper
+8275dd3 ville: update C2D2 libraries
+7a77efb ville: update Adreno firmware
+05291e9 ville: update proprietary files
+
+   * vendor/lge
+b9175cd e975: Switch to JB_VANILLA adreno drivers
+d53ef22 e975: Move QMI messages to radio log
+
+   * vendor/samsung
+a93c9f4 Correct filenames to ensure correct blobs get copied.
+dd02b57 Merge pull request #231 from invisiblek/cm-10.1
+fcfd381 jf-common: revert libcsd-client.so
+2dd14d6 Merge pull request #229 from invisiblek/cm-10.1
+d3ded4a add jaspervzw
+e954563 add pn544fw stuff
+6dc66b3 fix apexq ril
+ac1fe59 fix script screwup
+64c87df add more stuffadd more stuff
+44cbda8 add apexqtmo
+77ec274 Merge pull request #228 from sbrissen/cm-10.1
+5249c89 t0lte: remove RIL blobs from common props
+67cfb07 Merge pull request #227 from invisiblek/cm-10.1
+fb6f562 jf: add murata nvram
+a914396 Merge pull request #226 from Adam77Root/cm-10.1
+a9dbad7 i9103: remove unused blobs, prepare for camera wrapper
+58b0066 Merge pull request #225 from invisiblek/cm-10.1
+fbc45ee d2: let's build macloader instead
+f86bddf Merge pull request #224 from invisiblek/cm-10.1
+f790e8f Merge pull request #223 from invisiblek/cm-10.1
+db8e4c7 jf: remove macloader, we'll build it instead
+87f68c0 jfltexx: fix naming derp
+00dbe7a Merge pull request #222 from invisiblek/cm-10.1
+9681ec7 Revert "jfltevzw: use our own rilblobs. enjoy working gps"
+044d9b9 Merge pull request #218 from iurnait/cm-10.1
+50f2190 Merge pull request #221 from invisiblek/cm-10.1
+502fef7 jfltevzw: use our own rilblobs. enjoy working gps
+d8133f3 Merge branch 'cm-10.1' of github.com:invisiblek/proprietary_vendor_samsung into cm-10.1
+8c2cd9a d2r530: MD6 rilblobs
+c0182df Merge branch 'jf' of github.com:invisiblek/proprietary_vendor_samsung into cm-10.1
+ecda657 qcom: update c2d2 lib
+044919d jfltexx: update rilblobs
+6e2062d jfltexx: update rilblob
+620052c d2: update c2d2 blobs
+0040206 jf-common: update blobs
+8e351c4 d2: fix name
+
+   * vendor/sony
+a492aa2 prepare for camera wrapper
+1e364c0 blue-common: fix file path
+0061f01 blue-common: path fix
+8b6ec65 wlan: remove prima config
+f9e1e11 fusion3: updated prima firmware
+e350a91 pollux_windy: initial blob
+
+   * vendor/tmobile/providers/ThemeManager
+48ad5a5 ThemeManager: DA translation
+

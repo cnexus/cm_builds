@@ -1,0 +1,4 @@
+post-build=samsung/d2spr/d2spr:4.0.4/IMM76D/L710VPALG2:user/release-keys
+post-timestamp=1373588280
+pre-bootloader=L710VPBLJ7|L710VPBMA6|L710VPBMB1|L710VPBMD4
+pre-device=d2spr
